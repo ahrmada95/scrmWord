@@ -1,0 +1,34 @@
+Error Documentation:
+List of known errors and their cause
+
+ERROR 1IV
+	Location: main.cpp [line 123]
+	Reason: File specified by user could not be found to open, or default file could not be found to open
+	Fix: Enter valid filename 
+
+ERROR 2IV
+	Location: main.cpp [line 127]
+	Reason: File fed to game has words of length shorter than 3
+	Fix: Enter valid file contents 
+
+ERROR 3IV
+	Location: main.cpp [line 131]
+	Reason: File fed to game has difficulty levels of words with only 2 or 1 members
+	Fix: Enter valid file contents 
+
+ERROR 4GL
+	Location: GameLogic::nextWord(...)
+	Location: main.cpp [line 51]
+	Reason: No word at difficulty level specified by the parameter
+	NOTE: This is an internal error for checking, not meant to be seen by the user
+
+ERROR 5GL
+	Location: GameLogic::getKey(...)
+	Reason: User wishes to get a value that is beyond the bounds of the wordList vector
+	Fix: Reduce/enter correct passed parameter
+
+ERROR 6SF
+	Location main.cpp [line 63]
+	Reason: Missing save files
+	Fix: Autoresolved by program when player begins a new game
+
